@@ -1,0 +1,26 @@
+{
+    "name": "NomeGioco",
+    "version": "1.0.0",
+    "description": "Rpg made by Emiliano Brazzoli",
+    "main": "./src/app.js",
+    "scripts": {
+        "test": "echo \"Error: no file specified\" && exit 1",
+        "start": "node ./src/app.js"
+    },
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/emilianobrazzoli/NomeGioco.git"
+    },
+    "author": "EmilianoBrazzoli",
+    "license": "MIT",
+    "dependencies": {
+        "canvas": "^2.8.0",
+        "discord.io": "^2.5.3",
+        "discord.js": "12.x",
+        "dotenv": "^10.0.0",
+        "express": "^4.16.3"
+    }
+}
