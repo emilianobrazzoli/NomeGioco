@@ -1,0 +1,18 @@
+
+
+:anchor: **Ahoy marinaio!** :anchor: 
+:game_die: Il comando base è  **/7s N** dove N è il numero di dadi che tirerai!
+
+Puoi aggiungere diversi comandi al tiro come:
+:bomb: Aggiungendo **e** ogni 10 verrà ritirato! 
+:heavy_plus_sign: Aggiungendo **b N** sommerai una cifra N ad ogni dado tirato 
+:warning: Aggiungendo **s N** modificherai la soglia incremento in N (di default è a 10) 
+
+:flag_gb: *Type /7s eng to change to eng lenguage*
+
+:pirate_flag: :pirate_flag: :pirate_flag: 
+:spaghetti: Per maggiori dettagli sul creatore **/7s carbonara**
+:pirate_flag: :pirate_flag: :pirate_flag: 
+
+:robot: Sono un bot con molto sonno, se sono offline visita: https://settemari.herokuapp.com/
+Tornerò in vita!

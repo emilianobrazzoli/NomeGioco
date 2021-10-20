@@ -1,0 +1,17 @@
+
+
+:anchor: **Ahoy sailor!** :anchor:
+:game_die: The basic command is **/7s N** where N is the number of dice you will roll!
+
+You can add several commands to the roll such as:
+:bomb: By adding **e** every 10 will be withdrawn!
+:heavy_plus_sign: By adding **b N** you will add a bonus N to each die rolled
+:warning: By adding **s N** you will change the rise threshold to N (default is 10) 
+:flag_it: *Digita **/7s ita** per cambiare in Italiano*
+
+:pirate_flag: :pirate_flag: :pirate_flag: 
+:spaghetti: More details on my creator **/7s carbonara**
+:pirate_flag: :pirate_flag: :pirate_flag: 
+
+:robot:I'm a sleepy bot, if I'm offline visit: https://settemari.herokuapp.com/
+I'll come to life!
