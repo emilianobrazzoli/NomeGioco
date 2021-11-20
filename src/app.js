@@ -34,4 +34,19 @@ app.get("/AVVERTENZE", (request, response) => {
 app.get("/IFO", (request, response) => { 
     response.sendFile('info.html' , { root: './src/resource/html/' })
 });  
+app.get("/text.js", (request, response) => { 
+    response.sendFile('text.js' , { root: './src/resource/js/' })
+});  
+app.get("/home.css", (request, response) => { 
+    response.sendFile('home.css' , { root: './src/resource/css/' })
+});  
+app.get("/ego.css", (request, response) => { 
+    response.sendFile('ego.css' , { root: './src/resource/css/' })
+});  
+app.get("/text.scss", (request, response) => { 
+    response.sendFile('text.scss' , { root: './src/resource/css/' })
+});  
+app.get("/APPUNTI", (request, response) => { 
+    response.sendFile('charity-bolla.html' , { root: './src/resource/html/' }) 
+});  
 app.listen(port);  

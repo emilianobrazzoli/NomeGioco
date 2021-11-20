@@ -1,0 +1,149 @@
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+.family{ 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+@media screen and (min-width: 1200px) { 
+    .center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background: #ff393940;
+        transform: translate(-50%, -50%);
+        padding: 46px 25px;
+        border-radius: 5%;
+        color: #b0ffd3;
+    } 
+
+    .container{ 
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px){ 
+    .center {
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        background: #ff393940;
+        transform: translate(-20%, -20%);
+        padding: 46px 25px;
+        border-radius: 5%;
+        color: #b0ffd3;
+    } 
+
+    .container{ 
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) { 
+
+    .center {
+        color: white;
+        position: fixed;
+    } 
+
+    .container{ 
+        max-height: 300px;
+        overflow-y: auto;
+    }
+} 
+ 
+html {
+    --scrollbarBG: #cfd8dc00;
+    --thumbBG: #90a4ae;
+}
+
+div::-webkit-scrollbar {
+  width: 11px;
+}
+div {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+div::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+div::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+} 
+
+
+ 
+
+
+
+
+.animation {
+  text-align: center; 
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation:  aitf 10s linear infinite;;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295),
+    0px 0px 10px rgba(255, 255, 255, 0.295)
+  }
+}
+
+
+
+
+
+.animation {
+    /* font: 700 4em/1 "Oswald", sans-serif; */
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    /* display: block; */
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgb(255 255 255 / 50%);
+    background: url(https://media.istockphoto.com/photos/abstract-glitch-background-picture-id1147613691?b=1&k=20&m=1147613691&s=170667a&w=0&h=IuPC0fdbmSh9Vhsm82BV1IIk_fDnfimkVaR4UQ1DyVs=) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }

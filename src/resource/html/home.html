@@ -1,128 +1,40 @@
-
-
 <!DOCTYPE html>
 <html>
-<head> 
-<style>
-
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite; 
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
- 
-.family{ 
-    font-family: Arial, Helvetica, sans-serif; 
-}
-@media screen and (min-width: 1200px) { 
-    .center {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        background: #ff393940;
-        transform: translate(-50%, -50%);
-        padding: 46px 25px;
-        border-radius: 5%;
-        color: #b0ffd3;
-    } 
-
-    .container{ 
-        max-height: 300px;
-        overflow-y: auto;
-    }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 600px){ 
-    .center {
-        position: fixed;
-        top: 20%;
-        left: 20%;
-        background: #ff393940;
-        transform: translate(-20%, -20%);
-        padding: 46px 25px;
-        border-radius: 5%;
-        color: #b0ffd3;
-    } 
-
-    .container{ 
-        max-height: 300px;
-        overflow-y: auto;
-    }
-}
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) { 
-
-    .center {
-        color: white;
-        position: fixed;
-    } 
-
-    .container{ 
-        max-height: 300px;
-        overflow-y: auto;
-    }
-} 
- 
-html {
-    --scrollbarBG: #cfd8dc00;
-    --thumbBG: #90a4ae;
-}
-
-div::-webkit-scrollbar {
-  width: 11px;
-}
-div {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
-div::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
-}
-div::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG) ;
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
-} 
-  
-</style>
+<head>  
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+<link href="home.css" rel="stylesheet"> 
 </head> 
     <body class="family"> 
         <div class="center">
-            <h1>Benvenuto <b>Sognatore</b></h1><br>
+            <h1>Benvenuto <span class="animation">Sognatore</span></h1><br>
             <div class="container">  
-                Sono quello che rimane del mio creatore <b> Dtt. E. Z.</b><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Sono quello che rimane del mio creatore <span class="animation">Dtt. E. Z.</span><br>
                 <br>Ti guiderò io lungo i binari di questo tuo primo sogno collettivo.<br>
                 Avrai bisogno di almeno tre persone, matite, dadi a 6 facce e possibilmente un timer <br>
-                Ognuno di voi pensi al proprio <b>EGO</b><br>
-                Create la vostra <b>I.S.T.E.R.I.A</b> <br>
-                Decidete chi dovrà essere il vostro <b>SuperEGO</b><br>
+                Ognuno di voi pensi al proprio <span class="animation" onclick="location.href='/ego'">EGO</span><br>
+                Create la vostra <span class="animation">ISTERIA</span> <br>
+                Decidete chi dovrà essere il vostro <span class="animation">SuperEGO</span><br>
                 <br>
                 <br>
                 Contate all'indietro da 10 a 0<br>  
                 Da qui in poi inizia il sogno collettivo<br>
-                Il vostro <b>SuperEGO</b> vi guiderà in una narrazione partendo dalla vostra <b>I.S.T.E.R.I.A</b> <br>
-                Ogni 20 minuti il  <b>SuperEGO</b> perderà controllo e passerà il proprio ruolo al successivo Sognatore propria sinistra<br>
-                Ogni volta che avvertirete una DISSINCRONIA, oppure il <b>SuperEGO</b> non è riuscito a passare ad ego in maniera efficace...<br>
-                <b>I.S.T.E.R.I.A</b> perderà un punto coesione e ognuno di voi dovrà cambiare <b>EGO</b> con quello del Sognatore alla propria destra
-                Quando <b>I.S.T.E.R.I.A</b> sarà arrivata a 0 punti coesione contate da 0 a 10<br>
+                Il vostro <span class="animation">SuperEGO</span> vi guiderà in una narrazione partendo dalla vostra <span class="animation">ISTERIA</span> <br>
+                Ogni 20 minuti il  <span class="animation">SuperEGO</span> perderà controllo e passerà il proprio ruolo al successivo Sognatore alla propria sinistra<br>
+                Ogni volta che avvertirete una <span class="animation">DISSINCRONIA</span>, oppure il <span class="animation">SuperEGO</span> non è riuscito a passare ad ego in maniera efficace
+                <span class="animation">ISTERIA</span> perderà un punto coesione e avverrà una <span class="animation">DISSINCRONIA</span><br>
+                Quando <span class="animation">ISTERIA</span> sarà arrivata a 0 punti coesione contate da 0 a 10<br>
                 Il vostro sogno collettivo sarà concluso con un incubo<br>
                 <br>
-                Se risolverete in tempo  <b>I.S.T.E.R.I.A</b> allora il sogno si realizzerà<br>
+                Se risolverete in tempo  <span class="animation">ISTERIA</span> allora il sogno si realizzerà<br>
                 Non è possibile riprendere un sogno precedente.<br>
                 Tutti i sogni vanno conclusi in una sola sessione collettiva<br>
-                <b>Leggere caldamente tutte le avvertenze</b>
+                <br>
+                <br>
+                <span class="animation">Leggere caldamente tutte le avvertenze</span>
             </div>
         </div>
     </body>
