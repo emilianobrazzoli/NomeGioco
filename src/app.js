@@ -27,18 +27,21 @@ files.forEach(file => {
 });
 var filesCss = fs.readdirSync('./src/resource/css/');
 filesCss.forEach(file => {  
-    app.get("/"+file, (request, response) => { 
+    console.log("/src/resource/css/"+file);
+    app.get("/src/resource/css/"+file, (request, response) => { 
         response.sendFile(file , { root: './src/resource/css/' }) 
     });  
 });
 var filesJs = fs.readdirSync('./src/resource/js/');
 filesJs.forEach(file => {  
-    app.get("/"+file, (request, response) => { 
+    console.log("/src/resource/js/"+file);
+    app.get("/src/resource/js/"+file, (request, response) => { 
         response.sendFile(file , { root: './src/resource/js/' }) 
     });  
 });
 var filesHome = fs.readdirSync('./src/resource/home');
 filesHome.forEach(file => {  
+    console.log("/src/resource/html/home/"+file);
     app.get("/src/resource/html/home/"+file, (request, response) => { 
         response.sendFile(file , { root: './src/resource/home/' }) 
     });  
