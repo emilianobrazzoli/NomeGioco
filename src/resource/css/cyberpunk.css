@@ -2951,7 +2951,7 @@ body .swiper-container-horizontal>.district__swiper-pagination {
 
 @media (max-width:991px) {
     .navbar .brand-logo {
-        margin-left: 40px
+        /* margin-left: 40px; */
     }
 }
 
@@ -3152,7 +3152,8 @@ body .swiper-container-horizontal>.district__swiper-pagination {
 @media (max-width:991px) {
     .navbar__claim {
         padding-top: 5px;
-        padding-right: 0
+        padding-right: 0;
+        margin-top: 20px;
     }
 }
 
