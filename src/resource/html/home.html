@@ -1,52 +1,358 @@
-<!DOCTYPE html> 
-<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ti diamo il benvenuto a Night City</title><link rel="stylesheet" href="./src/resource/html/home/0-17737175d3dcd53dfef2.css"><link rel="stylesheet" href="./src/resource/html/home/home-39eef657b835dd9b1bbf.css"><iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./src/resource/html/home/saved_resource.html"></iframe><script type="text/javascript" async="" src="./src/resource/html/home/analytics.js.download"></script><script async="" src="./src/resource/html/home/gtm.js.download"></script><script> 
-    </script><!-- Anti-flicker snippet (recommended)  --><style>.async-hide {
-        opacity: 0 !important
-      } </style><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MG8LJTQ');</script><!-- End Google Tag Manager --><meta name="apple-mobile-web-app-title" content="Ti diamo il benvenuto a Night City"><meta name="application-name" content="Ti diamo il benvenuto a Night City"><meta name="description" content="Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà."><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="pl_PL"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="es_MX"><meta property="og:locale" content="it_IT"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="zh_TW"><meta property="og:type" content="website"><meta property="og:title" content="Ti diamo il benvenuto a Night City"><meta property="og:description" content="Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà."><meta property="og:site_name" content="Ti diamo il benvenuto a Night City"><meta property="og:image" content="https://www.nightcity.love/build/images/og-share-3248bc34.jpg"><meta property="og:url" content="https://www.nightcity.love/it/"><link rel="canonical" href="https://www.nightcity.love/it/"><link rel="apple-touch-icon" sizes="57x57" href="https://www.nightcity.love/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://www.nightcity.love/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://www.nightcity.love/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://www.nightcity.love/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://www.nightcity.love/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://www.nightcity.love/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://www.nightcity.love/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://www.nightcity.love/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://www.nightcity.love/favicons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="https://www.nightcity.love/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="https://www.nightcity.love/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="https://www.nightcity.love/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="https://www.nightcity.love/favicons/favicon-16x16.png"><link rel="manifest" href="https://www.nightcity.love/favicons/manifest.json"><link rel="shortcut icon" href="https://www.nightcity.love/favicons/favicon.ico"><link rel="stylesheet" href="./src/resource/html/home/qlw3rwm.css"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="msapplication-config" content="https://www.nightcity.love/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><script>
-      var isMobile = (typeof isMobile === 'undefined') ? (/mobile/i.test(navigator.userAgent) && ('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch))) : isMobile;
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ti diamo il benvenuto a Night City</title>
+    <link rel="stylesheet" href="./src/resource/html/home/0-17737175d3dcd53dfef2.css">
+    <link rel="stylesheet" href="./src/resource/html/home/home-39eef657b835dd9b1bbf.css"><iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./src/resource/html/home/saved_resource.html"></iframe>
+    <script type="text/javascript" async="" src="./src/resource/html/home/analytics.js.download"></script>
+    <script async="" src="./src/resource/html/home/gtm.js.download"></script>
+    <script>
+    </script><!-- Anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style><!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MG8LJTQ');
+    </script><!-- End Google Tag Manager -->
+    <meta name="apple-mobile-web-app-title" content="Ti diamo il benvenuto a Night City">
+    <meta name="application-name" content="Ti diamo il benvenuto a Night City">
+    <meta name="description" content="Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà.">
+    <meta property="og:locale" content="it_IT"> 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ti diamo il benvenuto a Night City">
+    <meta property="og:description" content="Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà.">
+    <meta property="og:site_name" content="Ti diamo il benvenuto a Night City">
+    <meta property="og:image" content="https://www.nightcity.love/build/images/og-share-3248bc34.jpg">
+    <meta property="og:url" content="https://www.nightcity.love/it/">
+    <link rel="canonical" href="https://www.nightcity.love/it/">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.nightcity.love/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.nightcity.love/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.nightcity.love/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.nightcity.love/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.nightcity.love/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.nightcity.love/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.nightcity.love/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.nightcity.love/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.nightcity.love/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.nightcity.love/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.nightcity.love/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.nightcity.love/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.nightcity.love/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.nightcity.love/favicons/manifest.json">
+    <link rel="shortcut icon" href="https://www.nightcity.love/favicons/favicon.ico">
+    <link rel="stylesheet" href="./src/resource/html/home/qlw3rwm.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="https://www.nightcity.love/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        var isMobile = (typeof isMobile === 'undefined') ? (/mobile/i.test(navigator.userAgent) && ('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch))) : isMobile;
     </script>
-                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="LPKWA-2QEQ4-Y8M79-27JWZ-RTAMN",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"LPKWA-2QEQ4-Y8M79-27JWZ-RTAMN",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="luro2eqccl7hqyp7wnrq-f-2ed1f4ddd-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"1090363","ak.ai":parseInt("649286",10),"ak.ol":"0","ak.cr":9,"ak.ipv":4,"ak.proto":"h2","ak.rid":"4bf7edda","ak.r":30134,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.bpcip":"93.34.237.0","ak.cport":48307,"ak.gh":"2.18.254.116","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1644147555","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==7GBJJd3XryH+MTXl6ugxRQozJgD5aPdLkAJnS9ahAKai6FcZazT9ce7M3IcWi57hoAHtqbWXL2kOUl9y+GGtI5VYiTHJ6DvhTg3LLYwl/HPlIs+R2GBcmgQetVCkxc8AUvyV8EUgu+KlV218BSr9y66V5ShkYffAShNG9/D+VRuhl/7n4snP805ANN2BoxPYJHL9G3vIVyA/vWSmU1WwU67NKRo5Yl4J61Hrx0ET4DA5ZrJQTnCzzfcG4SbAeM8VXziWrj0MDpZ8x2EE3GfiTw6xEm+A9sBJ55H51YbEfiqyxnoKihZajsBvT6SELPokDar9DScoFDFmd4VyC4YGA8DdCLqYYeLbROFz3VI56ejK8JafnHwVTslqDCtp+dZgeNN5GI6d7QmzixUq2eyNfTlqkpDZNYp+06kJPwoX+78=","ak.pv":"11","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head><body class="p-home2 has-video"><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG8LJTQ"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><div class="navbar"><div class="navbar__content"><div class="navbar__counter"><div class="navbar__counter--inner"><p class="navbar__counter-text"><span>NUMERO DI MORTI DI OGGI:</span></p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.411 80" preserveAspectRatio=""><path d="M346.411.315H0V72.1h281.36l65.05-57.224z" fill="#fff"></path><text class="navbar__counter-count"><tspan id="bodyCount" x="30" y="65">
-                0028
-            </tspan></text><text class="navbar__counter-count-text"><tspan x="0" y="22">morti</tspan></text></svg></div></div><div class="navbar__claim"><p>Sito ufficiale di<br>Night City - La città dei sogni</p></div><a class="brand-logo" href="https://datapoolnightcity.herokuapp.com/"><img src="./src/resource/html/home/navbar-logo-10374fd2.png" alt=""></a></div></div><header class="header section__observer is-visible"><div class="ybox ybox--1 ybox--header active ybox__hide"><span class="ybox__close"></span><img src="./src/resource/html/home/arasaka_home-f46030ed.jpg" alt=""></div><div class="header__content"><div class="header__content-left"><div class="header__content-left__container--wide"><img src="./src/resource/html/home/night-city-logo-5bddfa70.svg" alt=""><h1>TI DIAMO IL BENVENUTO A NIGHT CITY</h1></div><div class="header__content-left__container"><p>Che sia la tua prima volta a Night City o che tu abbia vissuto qui fin dai tempi dell'amministrazione Kress, questo sito fa per te. È giunto il momento di esplorarla con la nostra selezione di highlight migliori. Stupisci i tuoi amici con perle di saggezza sulle panoramiche storiche della città e dei suoi distretti. Muoviti con l'NCART senza esitazioni con la nostra guida TL;DR. Visita soltanto le parti interessanti di Heywood ed evita le gang con i consigli dell'NCPD. <strong>Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà.</strong></p></div></div><div class="header__content-right"><video autoplay="" muted="" loop="" playsinline="" id="headerVideo"><source src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/video/nlc-vid-loop-720p.mp4" data-mobile-video="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/video/nlc-vid-loop-480p.mp4" type="video/mp4"></video></div></div></header><main><div class="section__title mb-40"><div class="section__title--line"></div><h3 class="">STORIA</h3></div><div class="history__large-wrapper"><div class="history__left"><div class="history section__observer is-visible"><div class="ybox ybox--1 active" style="left: 243px;"><span class="ybox__close"></span><img src="./src/resource/html/home/arasaka_sol-15dc6c23.jpg" alt=""></div><div class="history__content"><h4 class="color--white">La storia di Night City inizia con il sogno di un uomo: il visionario imprenditore Richard Night. Verso la fine del 20° secolo, Night ebbe una visione sulla città del futuro... Una città incontaminata da idee vecchie e regole soffocanti.</h4><div class="history__inner"><div class="history__inner-photo"><img class="lazy" data-src="https://www.nightcity.love/build/images/History_RichardNight-a30ac267.png" alt="" src="./src/resource/html/home/History_RichardNight-a30ac267.png"></div><div class="history__inner--text"><p>Supportato da alcune delle maggiori corporazioni al mondo, realizzò la sua visione attraverso un audace sviluppo immobiliare a Coronado Bay, in California. Mentre il resto degli Stati Uniti iniziava a collassare, imprenditori e investitori accorsero versa questa metropoli del domani. Seguirono un periodo di crescita e prosperità senza precedenti.</p><div class="history__ybox--bg ybox--mobile ybox--static"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/33_1/holt-907e6fb0.jpg" alt=""></div><p>Sfortunatamente, interessi radicati e rivali gelosi erano intenzionati a sabotare la visione di Night, e così si verificò l'impensabile: Richard Night venne assassinato nella sua abitazione da ignoti assalitori. Tuttavia, la sua creazione... rinominata "Night City" in suo onore... sopravvisse. Negli anni che seguirono, Night City rifiutò il giogo degli Stati Uniti e affrontò abilmente catastrofi inimmaginabili, tra cui un'esplosione nucleare che distrusse il cuore della città, Corporate Plaza, senza l'aiuto di un governo nazionale lento e borioso. Fulgido esempio di successo, la determinazione di Night City continua a essere un'ispirazione per tutto il mondo.</p></div><div class="history__inner--text-mayor"><h3>QUALCHE PAROLA DAL SINDACO</h3><p>La prima volta che mi sono candidato per il consiglio di Night City, ho distrutto un paio di Bandittos a settimana. Ho girato ogni strada, vicolo e megaedificio nel mio distretto. Ho visto e sentito molte cose. Alla fine, pensavo di sapere tutto quello che c'era da sapere su questa città.<br><br>
-Quando mi hanno mostrato questo sito, ho capito che mi sbagliavo di grosso. Quasi mi dispiace rivelarvi tutti questi segreti, visitatori e abitanti della nostra splendida città. Fortunatamente, ce ne sono tantissimi altri che dovrete scoprire da soli.</p><p class="author"></p></div></div></div></div><div class="section__title mb-40"><div class="section__title--line"></div><h3 class="">TRASPORTI</h3></div><div class="transport section__observer is-visible"><div class="ybox ybox--1 active" style="left: 275px;"><span class="ybox__close"></span><img src="./src/resource/html/home/bolshevik-41606e1f.jpg" alt=""></div><div class="transport__text--wrapper"><div><div class="transport__text--header"><h4 class="color--white">Per essere un'enorme metropoli moderna, Night City è sorprendentemente accessibile, e potrai recarti a piedi praticamente ovunque. Tuttavia, non è il modo più rapido, sicuro o elegante di spostarsi in città. Diamo una rapida occhiata alle alternative.</h4></div><div class="transport__text"><div class="transport__text--col"><h3>AUTO</h3><p>Buona notizia per gli automobilisti: potrete parcheggiare ovunque vogliate e per tutto il tempo che vorrete. I parcheggi a pagamento sono stati aboliti negli anni '60, in parte in risposta all'estrema violenza riservata agli appaltatori che collaboravano con la MeterMe!, startup di controllo dei parcheggi.</p><p>Se devi comprare una nuova auto, avrai parecchie opzioni a disposizione, a prescindere dal saldo del tuo chip di credito. Le stazioni di CHOOH-2 sono numerose e oggigiorno soggette al controllo di qualità del settore industriale, il che significa che non troverai più mele marce che ti riempiranno il serbatoio con acqua e zucchero.</p></div><div class="transport__text--col"><h3>NCART</h3><p>L'NCART, ovvero il "Night City Area Rapid Transit", è un ottimo modo di spostarsi velocemente in città. Fiumane di persone lo utilizzano ogni giorno, essendo il modo più economico e spesso comodo di recarsi sul luogo desiderato. Questo sistema di trasporto vanta numerosi punti d'accesso sulla rete che si estende in tutta la città e che ti porterà da un punto all'altro con la stessa facilità e lo stesso sforzo nell'ascoltare le ultime hit su BlastDance.</p></div><div class="transport__text--col"><h3>TAXI</h3><p>Consigliamo fortemente il servizio di trasporti Delamain: queste solide auto guidate da IA ti porteranno ovunque con tariffe sorprendentemente ragionevoli.</p></div><div class="ybox--mobile ybox--static"><img src="./src/resource/html/home/delamain-fc9053cf.jpg" alt=""></div></div></div><div class="transport__text--ybox ybox--desktop ybox--static"></div></div><div class="transport__gallery"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div><div class="swiper-container swiper-container__transport swiper-container-initialized swiper-container-horizontal"><!-- Additional required wrapper --><div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div><!-- Slides --><div class="swiper-slide" data-swiper-slide-index="0"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""></div><div class="swiper-slide" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div><div class="swiper-slide" data-swiper-slide-index="2"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div></div><!-- If we need pagination --><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></div><div class="history__ybox-right"><div class="ybox--static ybox--desktop"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/9_21/allfoods_meat-843c2d8e.jpg" alt="" src="./src/resource/html/home/allfoods_meat-843c2d8e.jpg"></div><div class="ybox--static ybox--desktop"></div><div class=" ybox--mobile ybox--static"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/33_1/rhyne-b537cc79.jpg" alt=""></div></div></div><div class="gallery"><div class="section__title mb--15"><div class="section__title--line"></div><h3 class="">GALLERIA</h3></div><div class="swiper-container swiper-container__gallery swiper-container-initialized swiper-container-horizontal"><!-- Additional required wrapper --><span class="gallery__zoom"><img src="./src/resource/html/home/size_icon-dce6ba38.svg" alt="show gallery on fullscreen"></span><span class="gallery__close"><img src="./src/resource/html/home/close_icon-b97f1ff6.svg" alt="close gallery fullscreen"></span><div class="swiper-wrapper gallery__swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1903px, 0px, 0px);"><div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="16" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" alt=""></div><!-- Slides --><div class="swiper-slide gallery__swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1903px;"><img src="./src/resource/html/home/nlc-scr-2.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="2" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="3" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="4" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="5" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="6" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="7" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="8" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="9" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="10" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="11" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="12" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="13" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="14" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="15" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="16" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" alt=""></div><div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1903px;"><img src="./src/resource/html/home/nlc-scr-2.jpg" alt=""></div></div><div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><i class="icon icon--next"></i></div><div class="swiper-button swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><i class="icon icon--prev"></i></div><!-- If we need pagination --><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 11"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 12"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 13"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 14"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 15"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 16"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 17"></span></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></main><script>
+    <script>
+        ! function(a) {
+            var e = "https://s.go-mpulse.net/boomerang/",
+                t = "addEventListener";
+            if ("False" == "True") a.BOOMR_config = a.BOOMR_config || {}, a.BOOMR_config.PageParams = a.BOOMR_config.PageParams || {}, a.BOOMR_config.PageParams.pci = !0, e = "https://s2.go-mpulse.net/boomerang/";
+            if (window.BOOMR_API_key = "LPKWA-2QEQ4-Y8M79-27JWZ-RTAMN", function() {
+                    function n(e) {
+                        a.BOOMR_onload = e && e.timeStamp || (new Date).getTime()
+                    }
+                    if (!a.BOOMR || !a.BOOMR.version && !a.BOOMR.snippetExecuted) {
+                        a.BOOMR = a.BOOMR || {}, a.BOOMR.snippetExecuted = !0;
+                        var i, _, o, r = document.createElement("iframe");
+                        if (a[t]) a[t]("load", n, !1);
+                        else if (a.attachEvent) a.attachEvent("onload", n);
+                        r.src = "javascript:void(0)", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "width:0;height:0;border:0;display:none;", o = document.getElementsByTagName("script")[0], o.parentNode.insertBefore(r, o);
+                        try {
+                            _ = r.contentWindow.document
+                        } catch (O) {
+                            i = document.domain, r.src = "javascript:var d=document.open();d.domain='" + i + "';void(0);", _ = r.contentWindow.document
+                        }
+                        _.open()._l = function() {
+                            var a = this.createElement("script");
+                            if (i) this.domain = i;
+                            a.id = "boomr-if-as", a.src = e + "LPKWA-2QEQ4-Y8M79-27JWZ-RTAMN", BOOMR_lstart = (new Date).getTime(), this.body.appendChild(a)
+                        }, _.write("<bo" + 'dy onload="document._l();">'), _.close()
+                    }
+                }(), "".length > 0)
+                if (a && "performance" in a && a.performance && "function" == typeof a.performance.setResourceTimingBufferSize) a.performance.setResourceTimingBufferSize();
+            ! function() {
+                if (BOOMR = a.BOOMR || {}, BOOMR.plugins = BOOMR.plugins || {}, !BOOMR.plugins.AK) {
+                    var e = "" == "true" ? 1 : 0,
+                        t = "",
+                        n = "luro2eqccl7hqyp7wnrq-f-2ed1f4ddd-clientnsv4-s.akamaihd.net",
+                        i = "false" == "true" ? 2 : 1,
+                        _ = {
+                            "ak.v": "32",
+                            "ak.cp": "1090363",
+                            "ak.ai": parseInt("649286", 10),
+                            "ak.ol": "0",
+                            "ak.cr": 9,
+                            "ak.ipv": 4,
+                            "ak.proto": "h2",
+                            "ak.rid": "4bf7edda",
+                            "ak.r": 30134,
+                            "ak.a2": e,
+                            "ak.m": "b",
+                            "ak.n": "essl",
+                            "ak.bpcip": "93.34.237.0",
+                            "ak.cport": 48307,
+                            "ak.gh": "2.18.254.116",
+                            "ak.quicv": "",
+                            "ak.tlsv": "tls1.3",
+                            "ak.0rtt": "",
+                            "ak.csrc": "-",
+                            "ak.acc": "",
+                            "ak.t": "1644147555",
+                            "ak.ak": "hOBiQwZUYzCg5VSAfCLimQ==7GBJJd3XryH+MTXl6ugxRQozJgD5aPdLkAJnS9ahAKai6FcZazT9ce7M3IcWi57hoAHtqbWXL2kOUl9y+GGtI5VYiTHJ6DvhTg3LLYwl/HPlIs+R2GBcmgQetVCkxc8AUvyV8EUgu+KlV218BSr9y66V5ShkYffAShNG9/D+VRuhl/7n4snP805ANN2BoxPYJHL9G3vIVyA/vWSmU1WwU67NKRo5Yl4J61Hrx0ET4DA5ZrJQTnCzzfcG4SbAeM8VXziWrj0MDpZ8x2EE3GfiTw6xEm+A9sBJ55H51YbEfiqyxnoKihZajsBvT6SELPokDar9DScoFDFmd4VyC4YGA8DdCLqYYeLbROFz3VI56ejK8JafnHwVTslqDCtp+dZgeNN5GI6d7QmzixUq2eyNfTlqkpDZNYp+06kJPwoX+78=",
+                            "ak.pv": "11",
+                            "ak.dpoabenc": "",
+                            "ak.tf": i
+                        };
+                    if ("" !== t) _["ak.ruds"] = t;
+                    var o = {
+                        i: !1,
+                        av: function(e) {
+                            var t = "http.initiator";
+                            if (e && (!e[t] || "spa_hard" === e[t])) _["ak.feo"] = void 0 !== a.aFeoApplied ? 1 : 0, BOOMR.addVar(_)
+                        },
+                        rv: function() {
+                            var a = ["ak.bpcip", "ak.cport", "ak.cr", "ak.csrc", "ak.gh", "ak.ipv", "ak.m", "ak.n", "ak.ol", "ak.proto", "ak.quicv", "ak.tlsv", "ak.0rtt", "ak.r", "ak.acc", "ak.t", "ak.tf"];
+                            BOOMR.removeVar(a)
+                        }
+                    };
+                    BOOMR.plugins.AK = {
+                        akVars: _,
+                        akDNSPreFetchDomain: n,
+                        init: function() {
+                            if (!o.i) {
+                                var a = BOOMR.subscribe;
+                                a("before_beacon", o.av, null, null), a("onbeacon", o.rv, null, null), o.i = !0
+                            }
+                            return this
+                        },
+                        is_complete: function() {
+                            return !0
+                        }
+                    }
+                }
+            }()
+        }(window);
+    </script>
+</head>
+
+<body class="p-home2 has-video">
+    <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG8LJTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="navbar__content">
+            <div class="navbar__counter">
+                <div class="navbar__counter--inner">
+                    <p class="navbar__counter-text"><span>NUMERO DI MORTI DI OGGI:</span></p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.411 80" preserveAspectRatio="">
+                        <path d="M346.411.315H0V72.1h281.36l65.05-57.224z" fill="#fff"></path><text class="navbar__counter-count">
+                            <tspan id="bodyCount" x="30" y="65">
+                                0057
+                            </tspan>
+                        </text><text class="navbar__counter-count-text">
+                            <tspan x="0" y="22">morti</tspan>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <div class="navbar__claim">
+                <p>Sito ufficiale di<br>Night City - La città dei sogni</p>
+            </div><a class="brand-logo" href="https://datapoolnightcity.herokuapp.com/"><img src="./src/resource/html/home/navbar-logo-10374fd2.png" alt=""></a>
+        </div>
+    </div>
+    <header class="header section__observer is-visible">
+        <div class="ybox ybox--1 ybox--header active ybox__hide"><span class="ybox__close"></span><img src="./src/resource/html/home/arasaka_home-f46030ed.jpg" alt=""></div>
+        <div class="header__content">
+            <div class="header__content-left">
+                <div class="header__content-left__container--wide"><img src="./src/resource/html/home/night-city-logo-5bddfa70.svg" alt="">
+                    <h1>TI DIAMO IL BENVENUTO A NIGHT CITY</h1>
+                </div>
+                <div class="header__content-left__container">
+                    <p>Che sia la tua prima volta a Night City o che tu abbia vissuto qui fin dai tempi dell'amministrazione Kress, questo sito fa per te. È giunto il momento di esplorarla con la nostra selezione di highlight migliori. Stupisci i tuoi amici con perle di saggezza sulle panoramiche storiche della città e dei suoi distretti. Muoviti con l'NCART senza esitazioni con la nostra guida TL;DR. Visita soltanto le parti interessanti di Heywood ed evita le gang con i consigli dell'NCPD. <strong>Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà.</strong></p>
+                </div>
+            </div>
+            <div class="header__content-right"><video autoplay="" muted="" loop="" playsinline="" id="headerVideo">
+                    <source src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/video/nlc-vid-loop-720p.mp4" data-mobile-video="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/video/nlc-vid-loop-480p.mp4" type="video/mp4">
+                </video></div>
+        </div>
+    </header>
+    <main>
+        <div class="section__title mb-40">
+            <div class="section__title--line"></div>
+            <h3 class="">STORIA</h3>
+        </div>
+        <div class="history__large-wrapper">
+            <div class="history__left">
+                <div class="history section__observer is-visible">
+                    <div class="ybox ybox--1 active" style="left: 243px;"><span class="ybox__close"></span><img src="./src/resource/html/home/arasaka_sol-15dc6c23.jpg" alt=""></div>
+                    <div class="history__content">
+                        <h4 class="color--white">La storia di Night City inizia con il sogno di un uomo: il visionario imprenditore Richard Night. Verso la fine del 20° secolo, Night ebbe una visione sulla città del futuro... Una città incontaminata da idee vecchie e regole soffocanti.</h4>
+                        <div class="history__inner">
+                            <div class="history__inner-photo"><img class="lazy" data-src="https://www.nightcity.love/build/images/History_RichardNight-a30ac267.png" alt="" src="./src/resource/html/home/History_RichardNight-a30ac267.png"></div>
+                            <div class="history__inner--text">
+                                <p>Supportato da alcune delle maggiori corporazioni al mondo, realizzò la sua visione attraverso un audace sviluppo immobiliare a Coronado Bay, in California. Mentre il resto degli Stati Uniti iniziava a collassare, imprenditori e investitori accorsero versa questa metropoli del domani. Seguirono un periodo di crescita e prosperità senza precedenti.</p>
+                                <div class="history__ybox--bg ybox--mobile ybox--static"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/33_1/holt-907e6fb0.jpg" alt=""></div>
+                                <p>Sfortunatamente, interessi radicati e rivali gelosi erano intenzionati a sabotare la visione di Night, e così si verificò l'impensabile: Richard Night venne assassinato nella sua abitazione da ignoti assalitori. Tuttavia, la sua creazione... rinominata "Night City" in suo onore... sopravvisse. Negli anni che seguirono, Night City rifiutò il giogo degli Stati Uniti e affrontò abilmente catastrofi inimmaginabili, tra cui un'esplosione nucleare che distrusse il cuore della città, Corporate Plaza, senza l'aiuto di un governo nazionale lento e borioso. Fulgido esempio di successo, la determinazione di Night City continua a essere un'ispirazione per tutto il mondo.</p>
+                            </div>
+                            <div class="history__inner--text-mayor">
+                                <h3>QUALCHE PAROLA DAL SINDACO</h3>
+                                <p>La prima volta che mi sono candidato per il consiglio di Night City, ho distrutto un paio di Bandittos a settimana. Ho girato ogni strada, vicolo e megaedificio nel mio distretto. Ho visto e sentito molte cose. Alla fine, pensavo di sapere tutto quello che c'era da sapere su questa città.<br><br>
+                                    Quando mi hanno mostrato questo sito, ho capito che mi sbagliavo di grosso. Quasi mi dispiace rivelarvi tutti questi segreti, visitatori e abitanti della nostra splendida città. Fortunatamente, ce ne sono tantissimi altri che dovrete scoprire da soli.</p>
+                                <p class="author"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__title mb-40">
+                    <div class="section__title--line"></div>
+                    <h3 class="">TRASPORTI</h3>
+                </div>
+                <div class="transport section__observer is-visible">
+                    <div class="ybox ybox--1 active" style="left: 275px;"><span class="ybox__close"></span><img src="./src/resource/html/home/bolshevik-41606e1f.jpg" alt=""></div>
+                    <div class="transport__text--wrapper">
+                        <div>
+                            <div class="transport__text--header">
+                                <h4 class="color--white">Per essere un'enorme metropoli moderna, Night City è sorprendentemente accessibile, e potrai recarti a piedi praticamente ovunque. Tuttavia, non è il modo più rapido, sicuro o elegante di spostarsi in città. Diamo una rapida occhiata alle alternative.</h4>
+                            </div>
+                            <div class="transport__text">
+                                <div class="transport__text--col">
+                                    <h3>AUTO</h3>
+                                    <p>Buona notizia per gli automobilisti: potrete parcheggiare ovunque vogliate e per tutto il tempo che vorrete. I parcheggi a pagamento sono stati aboliti negli anni '60, in parte in risposta all'estrema violenza riservata agli appaltatori che collaboravano con la MeterMe!, startup di controllo dei parcheggi.</p>
+                                    <p>Se devi comprare una nuova auto, avrai parecchie opzioni a disposizione, a prescindere dal saldo del tuo chip di credito. Le stazioni di CHOOH-2 sono numerose e oggigiorno soggette al controllo di qualità del settore industriale, il che significa che non troverai più mele marce che ti riempiranno il serbatoio con acqua e zucchero.</p>
+                                </div>
+                                <div class="transport__text--col">
+                                    <h3>NCART</h3>
+                                    <p>L'NCART, ovvero il "Night City Area Rapid Transit", è un ottimo modo di spostarsi velocemente in città. Fiumane di persone lo utilizzano ogni giorno, essendo il modo più economico e spesso comodo di recarsi sul luogo desiderato. Questo sistema di trasporto vanta numerosi punti d'accesso sulla rete che si estende in tutta la città e che ti porterà da un punto all'altro con la stessa facilità e lo stesso sforzo nell'ascoltare le ultime hit su BlastDance.</p>
+                                </div>
+                                <div class="transport__text--col">
+                                    <h3>TAXI</h3>
+                                    <p>Consigliamo fortemente il servizio di trasporti Delamain: queste solide auto guidate da IA ti porteranno ovunque con tariffe sorprendentemente ragionevoli.</p>
+                                </div>
+                                <div class="ybox--mobile ybox--static"><img src="./src/resource/html/home/delamain-fc9053cf.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="transport__text--ybox ybox--desktop ybox--static"></div>
+                    </div>
+                    <div class="transport__gallery"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div>
+                    <div class="swiper-container swiper-container__transport swiper-container-initialized swiper-container-horizontal">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div><!-- Slides -->
+                            <div class="swiper-slide" data-swiper-slide-index="0"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""></div>
+                            <div class="swiper-slide" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div>
+                            <div class="swiper-slide" data-swiper-slide-index="2"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro3-3a067101.jpg" alt=""></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"><img src="./src/resource/html/home/metro1-4d446212.jpg" alt=""></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img class="lazy" data-src="https://www.nightcity.love/build/images/metro2-26b4938a.jpg" alt=""></div>
+                        </div><!-- If we need pagination -->
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="history__ybox-right">
+                <div class="ybox--static ybox--desktop"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/9_21/allfoods_meat-843c2d8e.jpg" alt="" src="./src/resource/html/home/allfoods_meat-843c2d8e.jpg"></div>
+                <div class="ybox--static ybox--desktop"></div>
+                <div class=" ybox--mobile ybox--static"><img class="lazy" data-src="https://www.nightcity.love/build/images/pop/33_1/rhyne-b537cc79.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="section__title mb--15">
+                <div class="section__title--line"></div>
+                <h3 class="">GALLERIA</h3>
+            </div>
+            <div class="swiper-container swiper-container__gallery swiper-container-initialized swiper-container-horizontal">
+                <!-- Additional required wrapper --><span class="gallery__zoom"><img src="./src/resource/html/home/size_icon-dce6ba38.svg" alt="show gallery on fullscreen"></span><span class="gallery__close"><img src="./src/resource/html/home/close_icon-b97f1ff6.svg" alt="close gallery fullscreen"></span>
+                <div class="swiper-wrapper gallery__swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1903px, 0px, 0px);">
+                    <div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="16" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" alt=""></div><!-- Slides -->
+                    <div class="swiper-slide gallery__swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1903px;"><img src="./src/resource/html/home/nlc-scr-2.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-1.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="2" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-3.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="3" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-4.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="4" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-5.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="5" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-6.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="6" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-7.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="7" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-8.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="8" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-9.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="9" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-10.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="10" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-11.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="11" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-12.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="12" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-13.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="13" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-14.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="14" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-15.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide" data-swiper-slide-index="15" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-16.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="16" style="width: 1903px;"><img class="lazy" data-src="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" data-src-mobile="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17-m.jpg" data-src-extra-large="https://cdn-l-cyberpunk.cdprojektred.com/nightcity/screens/nlc-scr-17.jpg" alt=""></div>
+                    <div class="swiper-slide gallery__swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1903px;"><img src="./src/resource/html/home/nlc-scr-2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><i class="icon icon--next"></i></div>
+                <div class="swiper-button swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><i class="icon icon--prev"></i></div><!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 11"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 12"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 13"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 14"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 15"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 16"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 17"></span></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </main>
+    <script>
         function readCookie(name) {
-          var nameEQ = name + "=";
-          var ca = document.cookie.split(';');
-          for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-          }
-          return null;
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
         }
 
         function createCookie(name, value, days) {
-          if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            var expires = "; expires=" + date.toGMTString();
-          } else var expires = "";
-          document.cookie = name + "=" + value + expires + "; path=/";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            } else var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
         }
 
         function hideBanner(banner) {
-          banner.style.opacity = '0';
-          setTimeout(function () {
-            banner.style.display = 'none';
-          }, 500);
-          createCookie('cookie_eu', 1, 365);
+            banner.style.opacity = '0';
+            setTimeout(function() {
+                banner.style.display = 'none';
+            }, 500);
+            createCookie('cookie_eu', 1, 365);
         }
         var banner = document.getElementById('cookies');
         var bannerClose = document.querySelector('.c-cookies__close');
-        bannerClose.addEventListener('click', function(e) { e.preventDefault(); hideBanner(banner) });
+        bannerClose.addEventListener('click', function(e) {
+            e.preventDefault();
+            hideBanner(banner)
+        });
 
-        if(!readCookie('cookie_eu')) {
-          banner.style.display = 'inline';
-          banner.style.opacity = '1';
+        if (!readCookie('cookie_eu')) {
+            banner.style.display = 'inline';
+            banner.style.opacity = '1';
         }
-      </script><script src="./src/resource/html/home/runtime-74eef81eb83ee14b1927.js.download"></script><script src="./src/resource/html/home/0-7223d3a281988e500842.js.download"></script><script src="./src/resource/html/home/home-e7a05691f6184eea2f48.js.download"></script></body></html>
+    </script>
+    <script src="./src/resource/html/home/runtime-74eef81eb83ee14b1927.js.download"></script>
+    <script src="./src/resource/html/home/0-7223d3a281988e500842.js.download"></script>
+    <script src="./src/resource/html/home/home-e7a05691f6184eea2f48.js.download"></script>
+</body>
+
+</html>
