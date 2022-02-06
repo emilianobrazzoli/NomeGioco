@@ -2357,7 +2357,7 @@ body .swiper-container-horizontal>.district__swiper-pagination {
 
 .header {
     margin-bottom: 120px;
-    margin-top: 250px
+    /* margin-top: 250px; */
 }
 
 @media (max-width:991px) {
