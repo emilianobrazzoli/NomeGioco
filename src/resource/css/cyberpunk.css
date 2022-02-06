@@ -3160,14 +3160,16 @@ body .swiper-container-horizontal>.district__swiper-pagination {
 @media (max-width:380px) {
     .navbar__claim {
         -webkit-box-flex: 0;
-        flex-grow: 0
+        flex-grow: 0;
+        display: none;
     }
 }
 
 @media (max-width:991px) {
     .navbar__claim p {
         font-size: 12px;
-        line-height: 1.1
+        line-height: 1.1;
+        display: none;
     }
 }
 
