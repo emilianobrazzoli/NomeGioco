@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/dist/'));
 app.use('/src/assets', express.static(__dirname + '/src/assets/'));
 
 app.get("/", (request, response) => { 
-    response.sendFile('access.html' , { root: './src/resource/html/' })
+    response.sendFile('home.html' , { root: './src/resource/html/' })
 });  
 
 var files = fs.readdirSync('./src/resource/html/');
@@ -32,9 +32,15 @@ filesCss.forEach(file => {
     });  
 });
 var filesJs = fs.readdirSync('./src/resource/js/');
-files.forEach(file => {  
+filesJs.forEach(file => {  
     app.get("/"+file, (request, response) => { 
         response.sendFile(file , { root: './src/resource/js/' }) 
+    });  
+});
+var filesHome = fs.readdirSync('./src/resource/home');
+filesHome.forEach(file => {  
+    app.get("/src/resource/html/home/"+file, (request, response) => { 
+        response.sendFile(file , { root: './src/resource/home/' }) 
     });  
 });
 
