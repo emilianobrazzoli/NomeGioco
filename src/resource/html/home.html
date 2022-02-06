@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ti diamo il benvenuto a Night City</title>
-    <link rel="stylesheet" href="./src/resource/html/home/0-17737175d3dcd53dfef2.css">
-    <link rel="stylesheet" href="./src/resource/html/home/home-39eef657b835dd9b1bbf.css"><iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./src/resource/html/home/saved_resource.html"></iframe>
+    <link rel="stylesheet" href="./src/resource/css/cyberpunk.css">
+    <iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./src/resource/html/home/saved_resource.html"></iframe>
 
     <script>
     </script><!-- Anti-flicker snippet (recommended)  -->
@@ -47,6 +47,8 @@
     <script>
         var isMobile = (typeof isMobile === 'undefined') ? (/mobile/i.test(navigator.userAgent) && ('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch))) : isMobile;
     </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
 </head>
 
 <body class="p-home2 has-video">
@@ -68,8 +70,18 @@
             </div>
             <div class="navbar__claim">
                 <p>Sito ufficiale di<br>Night City - La città dei sogni</p>
-            </div><a class="brand-logo" href="https://datapoolnightcity.herokuapp.com/"><img src="./src/resource/html/home/navbar-logo-10374fd2.png" alt=""></a>
+            </div><a class="brand-logo" href="./"><img src="./src/resource/html/home/navbar-logo-10374fd2.png" alt=""></a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+        
+    </div>
+    <div id="myLinks"> 
+        <a href="./news">- News</a>
+        <p>- Solide realtà di Night City:</p>
+        <a href="./ysun" style="padding: 20px;">- Ysun&co.</a>
     </div>
     <header class="header section__observer is-visible">
         <div class="ybox ybox--1 ybox--header active ybox__hide"><span class="ybox__close"></span><img src="./src/resource/html/home/arasaka_home-f46030ed.jpg" alt=""></div>
@@ -237,6 +249,17 @@
         if (!readCookie('cookie_eu')) {
             banner.style.display = 'inline';
             banner.style.opacity = '1';
+        }
+    </script>
+    
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
         }
     </script>
     <script src="./src/resource/html/home/runtime-74eef81eb83ee14b1927.js.download"></script>
