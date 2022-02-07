@@ -21,7 +21,8 @@
         "discord.io": "^2.5.3",
         "discord.js": "12.x",
         "dotenv": "^10.0.0",
-        "express": "^4.16.3",
-        "node-sass": "^6.0.1"
+        "express": "^4.17.2",
+        "node-sass": "^6.0.1",
+        "socket.io": "^4.4.1"
     }
 }

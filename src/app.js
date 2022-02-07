@@ -46,5 +46,22 @@ filesHome.forEach(file => {
         response.sendFile(file , { root: './src/resource/home/' }) 
     });  
 });
+ 
 
-app.listen(port);  
+  
+const http = require('http').Server(app);
+const io = require('socket.io')(http); 
+
+app.get('/chat', (req, response) => {
+    response.sendFile('chat.html' , { root: './' }) 
+});
+
+io.on('connection', (socket) => {
+  socket.on('chat message', msg => {
+    io.emit('chat message', msg);
+  });
+});
+
+http.listen(port, () => {
+  console.log(`Socket.IO server running at http://localhost:${port}/`);
+});
