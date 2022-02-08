@@ -2373,8 +2373,7 @@ body .swiper-container-horizontal>.district__swiper-pagination {
     flex-wrap: wrap
 }
 
-.header__content-left {
-    background-image: url(/build/images/header-bg-54a4cb6f.png);
+.header__content-left { 
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: -webkit-box;
@@ -2908,8 +2907,7 @@ body .swiper-container-horizontal>.district__swiper-pagination {
     width: 100%
 }
 
-.navbar {
-    background-image: url(/build/images/navbar-bg-38fcd5f4.png);
+.navbar { 
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;

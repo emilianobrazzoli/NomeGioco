@@ -14,23 +14,7 @@
         .async-hide {
             opacity: 0 !important
         }
-    </style><!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MG8LJTQ');
-    </script><!-- End Google Tag Manager -->
+    </style>
     <meta name="apple-mobile-web-app-title" content="Ti diamo il benvenuto a Night City">
     <meta name="application-name" content="Ti diamo il benvenuto a Night City">
     <meta name="description" content="Qualunque sia il tuo sogno qui a Night City, con questo sito a guidarti diventerà realtà.">
@@ -52,14 +36,14 @@
 </head>
 
 <body class="p-home2 has-video">
-    <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG8LJTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+   
     <div class="navbar">
         <div class="navbar__content">
             <div class="navbar__counter">
                 <div class="navbar__counter--inner">
                     <p class="navbar__counter-text"><span>NUMERO DI MORTI DI OGGI:</span></p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.411 80" preserveAspectRatio="">
                         <path d="M346.411.315H0V72.1h281.36l65.05-57.224z" fill="#fff"></path><text class="navbar__counter-count">
-                            <tspan id="bodyCount" x="30" y="65">
+                            <tspan id="bodyCount" class="bodyCount" x="30" y="65">
                                 0057
                             </tspan>
                         </text><text class="navbar__counter-count-text">
@@ -166,14 +150,20 @@
                                     <p>Se devi comprare una nuova auto, avrai parecchie opzioni a disposizione, a prescindere dal saldo del tuo chip di credito. Le stazioni di CHOOH-2 sono numerose e oggigiorno soggette al controllo di qualità del settore industriale, il che significa che non troverai più mele marce che ti riempiranno il serbatoio con acqua e zucchero.</p>
                                 </div>
                                 <div class="transport__text--col">
-                                    <h3>NCART</h3>
-                                    <p>L'NCART, ancora in costruzione, ovvero il "Night City Area Rapid Transit", è un ottimo modo di spostarsi velocemente in città. Fiumane di persone lo utilizzano ogni giorno, essendo il modo più economico e spesso comodo di recarsi sul luogo desiderato. Questo sistema di trasporto vanta numerosi punti d'accesso sulla rete che si estende in tutta la città e che ti porterà da un punto all'altro con la stessa facilità e lo stesso sforzo nell'ascoltare le ultime hit su BlastDance.</p>
+                                    <h3>AEREOMOBILI</h3>
+                                    <p>Le rivolte della fine degli anni ‘90 richiesero nuove
+                                        tattiche per il conflitto urbano. Prima fra tutte fu l’introduzione
+                                        di piccoli elicotteri monoposto o “girocotteri”.
+                                        Attualmente sono impiegati da unità di polizia,
+                                        sicurezza corporativa, squadre d’assalto di Solitari
+                                        e gang di spacciatori. Le versioni prive di armi sono
+                                        popolari come veicoli ricreativi.</p>
                                 </div>
                                 <div class="transport__text--col">
                                     <h3>TAXI</h3>
-                                    <p>Consigliamo fortemente il servizio di trasporti Delamain: queste solide auto guidate da IA ti porteranno ovunque con tariffe sorprendentemente ragionevoli.</p>
+                                    <p>Veicoli che non si fermano nelle Zone di Combattimento ma che sono pronti a scorrazzarvi ovunque per la giusta cifra.</p>
                                 </div>
-                                <div class="ybox--mobile ybox--static"><img src="./src/resource/html/home/delamain-fc9053cf.jpg" alt=""></div>
+                                <div class=" ybox--static"><img style="width: 454px !important;max-width: unset;" src="https://cyberpunk2077.wiki.fextralife.com/file/Cyberpunk-2077/cortes_delamain_no.21_vehicle_cyberpunk2077_wiki_guide_300.jpg" alt=""></div>
                             </div>
                         </div>
                         <div class="transport__text--ybox ybox--desktop ybox--static"></div>
@@ -237,46 +227,6 @@
             </div>
         </div>
     </main>
-    <script>
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-
-        function createCookie(name, value, days) {
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                var expires = "; expires=" + date.toGMTString();
-            } else var expires = "";
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-
-        function hideBanner(banner) {
-            banner.style.opacity = '0';
-            setTimeout(function() {
-                banner.style.display = 'none';
-            }, 500);
-            createCookie('cookie_eu', 1, 365);
-        }
-        var banner = document.getElementById('cookies');
-        var bannerClose = document.querySelector('.c-cookies__close');
-        bannerClose.addEventListener('click', function(e) {
-            e.preventDefault();
-            hideBanner(banner)
-        });
-
-        if (!readCookie('cookie_eu')) {
-            banner.style.display = 'inline';
-            banner.style.opacity = '1';
-        }
-    </script>
     
     <script>
         function myFunction() {
@@ -332,7 +282,7 @@
         document.onmouseup = null;
         document.onmousemove = null;
       }
-    }
+    }  
     </script>
     <script src="./src/resource/html/home/runtime-74eef81eb83ee14b1927.js.download"></script>
     <script src="./src/resource/html/home/0-7223d3a281988e500842.js.download"></script>
