@@ -17,6 +17,9 @@ app.use('/src/assets', express.static(__dirname + '/src/assets/'));
 app.get("/", (request, response) => { 
     response.sendFile('home.html' , { root: './src/resource/html/' })
 });  
+app.get("/favicon.ico", (request, response) => { 
+    response.sendFile('favicon.ico' , { root: './src/resource/' })
+});  
 
 var files = fs.readdirSync('./src/resource/html/');
 files.forEach(file => { 
