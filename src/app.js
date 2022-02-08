@@ -61,7 +61,10 @@ app.get('/chatClient.js', (req, response) => {
 const http = require('http').Server(app);
 const io = require('socket.io')(http); 
 const room = 'NC'; 
+const random = require('./randomChat.json');
 var history = [];
+var things = ['Rock', 'Paper', 'Scissor','unlikely','lethal','sweet','warm','existing','elastic','painstaking','alluring','absent','bustling','wooden','eastern','nice','mature','null','overconfident','learned','sophisticated','boorish','scandalous','frightened','defeated','desperate','testy','versed','sudden','handsome','courageous','panoramic','economic','unaccountable','male','actually','bitter','mellow','black-and-white','lackadaisical','threatening','abiding','productive','loving','organic','greedy','psychotic','happy','penitent','modern','necessary','wiry','neat'];
+
 
 // handle incoming connections from clients
 io.sockets.on('connection', function(socket) { 
@@ -77,8 +80,16 @@ io.sockets.on('connection', function(socket) {
     socket.on('get_message', function(){ 
         io.sockets.send(history);
     });
+
+    
 });
  
+setInterval( function(){
+    var username = things[Math.floor(Math.random()*things.length)] + Math.floor(Math.random()*things.length); 
+    var message = random.random[Math.floor(Math.random()*random.random.length)]; 
+    io.sockets.in(room).emit('message', username+ ': '+message); 
+    history.push(username+ ': '+message);   
+} , 5000);
 
 http.listen(port, () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
