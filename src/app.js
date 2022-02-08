@@ -49,18 +49,36 @@ filesHome.forEach(file => {
  
 
   
-const http = require('http').Server(app);
-const io = require('socket.io')(http); 
-
+app.get('/history.js', (req, response) => {
+    response.sendFile('/history.js' , { root: './src' }) 
+});
 app.get('/chat', (req, response) => {
     response.sendFile('chat.html' , { root: './' }) 
 });
-
-io.on('connection', (socket) => {
-  socket.on('chat message', msg => {
-    io.emit('chat message', msg);
-  });
+app.get('/chatClient.js', (req, response) => {
+    response.sendFile('chatClient.js' , { root: './' }) 
 });
+const http = require('http').Server(app);
+const io = require('socket.io')(http); 
+const room = 'NC'; 
+var history = [];
+
+// handle incoming connections from clients
+io.sockets.on('connection', function(socket) { 
+    socket.on('room', function(username) {
+        socket.join(room);
+        io.sockets.in(room).emit('message', username+' si è unito al datapool'); 
+    });
+    socket.on('message', function(message) {
+        io.sockets.in(room).emit('message', message);
+        history.push(message);  
+    });
+    
+    socket.on('get_message', function(){ 
+        io.sockets.send(history);
+    });
+});
+ 
 
 http.listen(port, () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
